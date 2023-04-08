@@ -14,7 +14,7 @@ spring:
     check-location: false
     baselineOnMigrate: true
   datasource:
-    url: 'jdbc:postgresql://localhost:5432/floryn-hapi-fhir-etx-db'
+    url: 'jdbc:postgresql://localhost:5432/floryn-hapi-fhir-etx-db-dev'
     #url: jdbc:h2:mem:test_mem
     username: postgres
     password: admin
