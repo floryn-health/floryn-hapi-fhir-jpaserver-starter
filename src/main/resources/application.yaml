@@ -14,10 +14,10 @@ spring:
     check-location: false
     baselineOnMigrate: true
   datasource:
-    url: 'jdbc:postgresql://localhost:5432/floryn-hapi-fhir-etx-db-dev'
+    url: 'jdbc:postgresql://localhost:8082/florynDB'
     #url: jdbc:h2:mem:test_mem
-    username: postgres
-    password: admin
+    username: florynDevDB
+    password: !T@{8V\#j)4V</a$
     # driverClassName: org.h2.Driver
     max-active: 15
 
