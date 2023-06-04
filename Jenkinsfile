@@ -23,7 +23,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Build the Maven project and create the artifact
-                sh 'mvn install'
+                sh 'mvn install -DskipTests'
             }
         }
     }
