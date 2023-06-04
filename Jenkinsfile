@@ -2,10 +2,14 @@ pipeline {
     agent any
     
     tools {
-        maven 'Maven 3.9.2' // Specify the name of the configured Maven installation
+        maven 'Maven' // Specify the name of the configured Maven installation
     }
 
     stages {
+        stage('init') {
+            checkout scm
+        }
+        
         stage('Checkout') {
             steps {
                 // Checkout the source code from your version control system (e.g., Git)
