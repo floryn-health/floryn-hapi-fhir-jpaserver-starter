@@ -6,10 +6,6 @@ pipeline {
     }
 
     stages {
-        stage('init') {
-            checkout scm
-        }
-        
         stage('Checkout') {
             steps {
                 // Checkout the source code from your version control system (e.g., Git)
